@@ -1,0 +1,40 @@
+CREATE TABLE shoes (
+    id INTEGER PRIMARY KEY,
+    category TEXT,
+    item TEXT,
+    quantity INTEGER,
+    price REAL);
+
+INSERT INTO shoes VALUES (1, "Boots", "Ankle Bootie", 30, 50);
+INSERT INTO shoes VALUES (2, "Boots", "Chelsea Boot", 20, 100);
+INSERT INTO shoes VALUES (3, "Boots", "Cowboy Boot", 10, 150);
+INSERT INTO shoes VALUES (4, "Boots", "Over-the-Knee Boots", 15, 120);
+INSERT INTO shoes VALUES (5, "Boots", "Platform Boot", 5, 200);
+INSERT INTO shoes VALUES (6, "Sneakers", "Platform Sneaker", 15, 90);
+INSERT INTO shoes VALUES (7, "Sneaker", "Running Shoes", 15, 70);
+INSERT INTO shoes VALUES (8, "Sneaker", "High-Top Sneaker", 15, 65);
+INSERT INTO shoes VALUES (9, "Sneaker", "Slip-On Sneaker", 20, 60);
+INSERT INTO shoes VALUES (10, "Sneaker", "Basketball Shoes", 15, 150);
+INSERT INTO shoes VALUES (11, "Sandals", "Dress Sandals", 20, 60);
+INSERT INTO shoes VALUES (12, "Sandals", "Casual Sandals", 20, 100);
+INSERT INTO shoes VALUES (13, "Sandals", "Flat Sandals", 30, 50);
+INSERT INTO shoes VALUES (14, "Sandals", "Slide Sandals", 50, 20);
+INSERT INTO shoes VALUES (15, "Sandals", "Platform Sandals", 10, 50);
+INSERT INTO shoes VALUES (16, "Sandals", "Platform Sandals", 20, 80);
+INSERT INTO shoes VALUES (17, "Sandals", "Wedge Sandals", 15, 70);
+INSERT INTO shoes VALUES (18, "Sandals", "Clogs", 20, 50);
+INSERT INTO shoes VALUES (19, "Sandals", "Mule", 20, 90);
+INSERT INTO shoes VALUES (20, "Loafer", "Platform Loafer", 10, 150);
+
+SELECT * FROM shoes;
+
+SELECT * FROM shoes ORDER BY quantity DESC;
+
+SELECT * FROM shoes WHERE price <100;
+
+SELECT MAX(quantity) FROM shoes;
+
+SELECT SUM(quantity) FROM shoes;
+
+SELECT MIN(quantity) FROM shoes;
+
